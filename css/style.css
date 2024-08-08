@@ -10,6 +10,26 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header h1{
+    margin: 30px;
+}
+.contant{
+    display: flex;
+}
+.contant li{
+    margin: 37px 30px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .container {
@@ -50,6 +70,11 @@ footer {
     padding: 10px;
     box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background-color: #f9f9f9;
 }
 .card img{
     width: 100px;
@@ -58,12 +83,18 @@ footer {
     object-fit: cover;
     border-radius: 100%;
 }
+.card-containers{
+    display: flex;
+    justify-content: space-around;
+}
 .card button{
     padding: 10px;
     border-radius: 20px;
     border: none;
     background-color: #03344C;
     color: #ffff;
+    cursor: pointer;
+
 }
 .cards{
     width: 28%;
@@ -80,4 +111,15 @@ footer {
     height: 190px;
     object-fit: cover;
     border-radius: 10px;
+}
+.btn-teal{
+    color: teal;
+    cursor: pointer;
+}
+nav li:hover{
+    text-decoration: underline;
+    
+}
+.btn-teal p:hover{
+    text-decoration: underline;
 }
